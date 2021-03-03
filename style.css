@@ -222,7 +222,7 @@ a:hover, a:visited, a:link, a:active
 }
   
 .pac-dot {
-    background-color: rosybrown;
+    background-color: darkgray;
     border: 5px solid white; 
     box-sizing: border-box;
     border-radius: 10px;
@@ -233,7 +233,7 @@ a:hover, a:visited, a:link, a:active
 }
   
 .power-pellet {
-    background-color: #DEB887;
+    background-color: darkgray;
     border-radius: 10px;
 } 
 
