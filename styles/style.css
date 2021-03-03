@@ -1,0 +1,264 @@
+body {
+    min-height: 100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    background-color: #FFFFF0;
+    
+}
+.tri {
+    display:block;
+    margin:0px auto;
+    width: 0px; 
+    height: 0px;
+    border-top: 350px solid #E0E0E0;
+    border-right: 700px solid transparent;
+    border-bottom: 350px solid transparent;
+    border-left: 700px solid #E0E0E0;
+    position: relative;
+}
+
+.title {
+    background-image: url("images/sparkledheading.jpg");
+    background-size: 500px;;
+    background-color: thistle;
+    color: #E0E0E0;
+    font-family: 'Combo', cursive;
+    position: absolute;
+    width: 1400px;
+    height: auto;    
+    top: -350px;
+    left: -700px;
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+
+#aboutme{
+    color: black;
+    font-family: 'Combo', cursive;
+    margin-left: -650px; 
+    margin-top: -100px;
+    font-size: 25px; 
+    position: absolute;
+    padding-left: -10px;
+
+}
+
+#list {
+    color: black; 
+    font-family: 'Combo', cursive;
+    position: relative;
+    margin-left: 10px; 
+    margin-top: 1px;
+    font-size: 25px;
+    cursor: pointer;   
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 350px; 
+    margin-top: -150px;
+    border: 10px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+.link {
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+  width: 190px;
+}
+ 
+  /* Tooltip text */
+.hoverthing .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #E0E0E0;
+    color: #fff;
+    text-align: center;
+    color: black;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 20px;
+    right: -230px ;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .hoverthing .tooltiptext2  {
+    visibility: hidden;
+    width: 120px;
+    background-color: #E0E0E0;;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+      top: 50px;
+      right: -280px ;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .hoverthing .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #E0E0E0;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 80px;
+    right: -280px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .hoverthing .tooltiptext4 {
+    visibility: hidden;
+    width: 100px;
+    background-color: #E0E0E0;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 115px;
+    right: -300px ;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .hoverthing .tooltiptext5  {
+    visibility: hidden;
+    width: 300px;
+    background-color: #E0E0E0;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 150px;
+    right: -450px ;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+.hoverthing:hover .tooltiptext1{
+    visibility: visible;
+    opacity: 1;
+  } 
+
+.hoverthing:hover .tooltiptext2{
+    visibility: visible;
+    opacity: 1;
+  } 
+  .hoverthing:hover .tooltiptext3{
+    visibility: visible;
+    opacity: 1;
+  } 
+  .hoverthing:hover .tooltiptext4{
+    visibility: visible;
+    opacity: 1;
+  }
+  .hoverthing:hover .tooltiptext5{
+    visibility: visible;
+    opacity: 1;
+  }
+
+a:hover, a:visited, a:link, a:active
+  {
+      text-decoration: none;
+      color: black;
+  }
+
+.hoverthing:hover .tooltip {
+  background-color: #E0E0E0;
+  }
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border: solid black;
+    margin-left: 370px;
+}
+  
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+  
+.pac-dot {
+    background-color: rosybrown;
+    border: 5px solid white; 
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+.wall {
+    background-color: #E0E0E0;
+}
+  
+.power-pellet {
+    background-color: #DEB887;
+    border-radius: 10px;
+} 
+
+.blinky {
+  background-color: red;
+  border: 0px;
+}
+
+.pinky {
+  background-color: pink;
+  border: 0px;
+}
+
+.inky{
+  background-color: cyan;
+  border: 0px;
+}
+
+.clyde{
+  background-color: orange;
+  border: 0px;
+}
+
+.scared-ghost {
+  background-color: #ff7b25;
+  border: 0px;
+}
+
+.pac-man {
+  background-color: yellow;
+  border-radius: 10px;
+
+}
+
+.scorehead {
+  color: #B03060;
+  margin-left: 630px;
+}
