@@ -1,60 +1,66 @@
 <!DOCTYPE HTML>
 <html lang="en" dir="ltr">
-<head> 
-       <title> Homework assignment</title>
-       <meta charset="utf-8">
-       <link rel="stylesheet" href="style.css">
-       <script src="app.js" charset="utf-8"></script>
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
-       <link rel = "icon" href = "images\heart.PNG"  type = "image/x-icon"> 
-</head>       
-<body>
-        <div class="tri">
-            <div class="title">
-                   <h1 id="name"> Maria Julia Soler </h>
-                   <h5 id="subtitle"> Curitiba, Brazil. April 11Th, 1994.</h5>
+    <head>
+        <title> Homework assignment</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="title">
+            <div class="name"> Maria Julia Soler </div>
+            <div class='contact'>
+                <a  class="tag" href="https://www.instagram.com/maju.soler/?hl=en">
+                    <img class='icons' src='images/instagram.png'  alt="insta" />
+                </a>
+                <a class="tag" href="https://www.github.com/MajuSoler">
+                    <img class='icons' src='images/github.png'  alt="insta" />
+                </a>
+                <a class="tag" href="https://www.linkedin.com/in/MajuSoler">
+                    <img class='icons' src='images/linkedin.svg'  alt="insta" />
+                </a>
             </div>
-            <div id="aboutme"> 
-                <p> Ex english teacher changing letters for bits, 
-                    <br>poetry for API's and friends for... 
-                    <br> Well, friendship will nerver change!
-                </p>
-            </div>
-                <div>             
-                <img id="picture" src="images\pagephote.jpeg" alt="Beautiful woman with sunglasses and blue dress.">
-                </div>
-                <ul>
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip">Likes</div></li>
-                    <span class="tooltiptext1"> Travelling, reading, gym, beaches.  </span> 
-                </div>
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip">Deslikes</div></li>
-                    <span class="tooltiptext2"> Tv, bad food, slow internet. </span>
-                </div>
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip">Aptitudes</div></li>
-                    <span class="tooltiptext3"> Connecting with people, organizing tasks, logic.</span>
-                </div>
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip">Shortcomings</div></li>
-                    <span class="tooltiptext4"> Dancing, doing the dishes.</span>
-                </div>
-                
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip">Contact</div></li>
-                    <span class="tooltiptext5"> Instagram: Maju.Soler
-                        <br> GitHub: github.com/MajuSoler
-                        <br> LinkeIn: linkedin.com/in/MajuSoler </span>
-                </div>
-                <div class="hoverthing">
-                    <li><div id="list" class="tooltip link">
-                        <a href="game.html">Let's play a game?</a>
-                        </div>
-                    </li>
-                </div>
-                </ul>  
         </div>
-</body>
+        <div class='wrapper'>
+            <img class="image" src="images\pagephote.jpeg" alt="Beautiful woman with sunglasses and blue dress.">
+            <div class="aboutme">
+                <div id="subtitle"> Curitiba, Brazil. April 11th, 1994.</div>
+                <div> A Brazilian born English teacher, changing fields after discovering a new found love for development.</div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-title">Likes</div> 
+                <div class="card-description"> A beautiful sunset by the beach with my friends and a good book.</div>
+                <img class="card-photo" src="images/beach.png" alt="beach" />
+            </div>
+            <div class="card">
+                <div class="card-title">Deslikes</div> 
+                <div class="card-description"> Bad weather, bla blabbla rude people and tasteless food.</div>
+                <img class="card-photo" src="images/memebadfood.png" alt="food" />
+            </div>
+            <div class="card">
+                <div class="card-title">Aptitudes</div> 
+                <div class="card-description"> I am good with organizing tasks and meeting new people.</div>
+                <img class="card-photo" src="images/newpeople.png" alt="people" />
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-title">Shortcomings</div> 
+                <div class="card-description"> Sometimes I can be a bit stuborn. Also, math. So difficult! </div>
+                <img class="card-photo" src="images/math.png" alt="math" />
+            </div>
+            <a id='game' href="game.html">
+                <div class="card" >
+                    <div id="title-game" class="card-title">Let's play a game?</div> 
+                    <div class="card-description"> A little game I made, just for fun.</div>
+                    <img class="card-photo" src="images/pacman.png" alt="pac" />
+                </div>
+            </a>
+        </div>
+
+        <div class='footer'>
+            <div class='footer-email'>juliasolernunes@ymail.com</div>
+        </div>
+    </body>
 </html>
