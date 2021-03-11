@@ -1,274 +1,253 @@
-body {
-    min-height: 100%;
-    height: 100%;
-    padding:0;
-    margin:0;
-    background-color: #FFFFF0;
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient( #f9f9f9, #adadad);
+        justify-content: center;
+    }
     
-}
-.tri {
-    display:block;
-    margin:0px auto;
-    width: 0px; 
-    height: 0px;
-    border-top: 350px solid #E0E0E0;
-    border-right: 700px solid transparent;
-    border-bottom: 350px solid transparent;
-    border-left: 700px solid #E0E0E0;
-    position: relative;
-}
+    .title {
+        color: #bac2cb;
+        font-family: 'Combo', cursive;
+        text-align: center;
+    }
+    
+    .name {
+        padding: 0;
+        font-size: 50px;
+    }
 
-.title {
-    background-image: url("images/sparkledheading.jpg");
-    background-size: 500px;;
-    background-color: thistle;
-    color: #E0E0E0;
-    font-family: 'Combo', cursive;
-    position: absolute;
-    width: 1400px;
-    height: auto;    
-    top: -350px;
-    left: -700px;
-    font-size: 25px;
-    padding-left: 40px;
-}
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
 
-#subtitle {
-  font-size: 20px;
-  padding-top: 5px;
-  margin-top: 5px;
-}
+    .tag {
+        margin: 8px;
+    }
 
-#name {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
+    .icons {
+        max-width: 50px;
+    }
 
-#aboutme{
-    color: black;
-    font-family: 'Combo', cursive;
-    margin-left: -650px; 
-    margin-top: -100px;
-    font-size: 25px; 
-    position: absolute;
-    padding-left: -10px;
+    #subtitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.125rem;
+        padding: 0px 16px 16px;
+    }
 
-}
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
-#list {
-    color: black; 
-    font-family: 'Combo', cursive;
-    position: relative;
-    margin-left: 10px; 
-    margin-top: 1px;
-    font-size: 25px;
-    cursor: pointer;   
-}
+    .wrapper {
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(173, 35, 120, 0.6);
+    }
+    
+    .aboutme {
+        color: #f6f6f6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 48px;
+    }
 
-img {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    margin-left: 350px; 
-    margin-top: -150px;
-    border: 10px solid #E0E0E0;
-    border-radius: 8px;
-}
+    .image {
+        width: 35%;
+        height: 50%;
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px #ffff;
+        animation: fadeIn ease 2s;
+    }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
+    .image:hover {
+        width: 38%;
+        height: 53%;
+        cursor:pointer;
+    }
 
-.link {
-  color: black;
-  text-decoration: none;
-  text-transform: none;
-  width: 190px;
-}
- 
-  /* Tooltip text */
-.hoverthing .tooltiptext1 {
-    visibility: hidden;
-    width: 120px;
-    background-color: #E0E0E0;
-    color: #fff;
-    text-align: center;
-    color: black;
-    padding: 5px 0;
-    border-radius: 6px;
-    top: 20px;
-    right: -230px ;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  .hoverthing .tooltiptext2  {
-    visibility: hidden;
-    width: 120px;
-    background-color: #E0E0E0;;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-      top: 50px;
-      right: -280px ;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-  }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        padding: 24px 10%;
+        animation: fadeIn ease 2s;
+    }
 
-  .hoverthing .tooltiptext3 {
-    visibility: hidden;
-    width: 120px;
-    background-color: #E0E0E0;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    top: 80px;
-    right: -280px;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-  }
+    .card {
+        min-width: 200px;
+        min-height: 300px;
+        max-width: 200px;
+        max-height: 300px;
+        background-color: #d1a2a9;
+        border-radius: 40px;
+        text-align: center;
+        margin: 24px;
+        box-shadow: 0px 0px 5px #ffff;
+        position: relative;
+    }
 
-  .hoverthing .tooltiptext4 {
-    visibility: hidden;
-    width: 100px;
-    background-color: #E0E0E0;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    top: 115px;
-    right: -300px ;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-  }
+    .card:hover {
+        min-width: 210px;
+        max-width: 210px;
+        cursor: pointer;
+    }
 
-  .hoverthing .tooltiptext5  {
-    visibility: hidden;
-    width: 300px;
-    background-color: #E0E0E0;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    top: 150px;
-    right: -450px ;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-  }
+    .card-photo {
+        max-width: 100%;
+        border-top-left-radius: 80px;
+        min-height: 130px;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+    }
 
-  /* Show the tooltip text when you mouse over the tooltip container */
-.hoverthing:hover .tooltiptext1{
-    visibility: visible;
-    opacity: 1;
-  } 
+    .card-title {
+        font-size: 1.5rem;
+        margin: 16px;
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+    }
 
-.hoverthing:hover .tooltiptext2{
-    visibility: visible;
-    opacity: 1;
-  } 
-  .hoverthing:hover .tooltiptext3{
-    visibility: visible;
-    opacity: 1;
-  } 
-  .hoverthing:hover .tooltiptext4{
-    visibility: visible;
-    opacity: 1;
-  }
-  .hoverthing:hover .tooltiptext5{
-    visibility: visible;
-    opacity: 1;
-  }
+    .card-description {
+        font-size: 1.125rem;
+        margin: 0px 16px 16px;
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .link {
+        color: black;
+        text-decoration: none;
+        text-transform: none;
+        width: 190px;
+    }
 
-a:hover, a:visited, a:link, a:active
-  {
-      text-decoration: none;
-      color: black;
-  }
+    .footer {
+        margin-top: 100px;
+        height: 60px;
+        background: rgb(173, 35, 120, 0.6);
+        width: 100%;
+        border-radius: 0%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 5px #ffff;
+    }
 
-.hoverthing:hover .tooltip {
-  background-color: #E0E0E0;
-  }
+    .footer-email {
+        font-size: 1rem;
+        display: flex;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        align-items: center;
+    }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    height: 600px;
-    border: solid black;
-    margin-left: 370px;
-}
-  
-.grid div {
-    width: 20px;
-    height: 20px;
-}
-  
-.pac-dot {
-    background-color: darkgray;
-    border: 5px solid white; 
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-  
-.wall {
-    background-color: #E0E0E0;
-}
-  
-.power-pellet {
-    background-color: darkgray;
-    border-radius: 10px;
-} 
+    #game {
+        text-decoration: none;
+        margin: 0;
+    }
 
-.blinky {
-  background-color: red;
-  border: 0px;
-}
+    #title-game {
+        padding-top: 16px;
+    }
+   
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 600px;
+        border: solid black;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f9f9f9;
+    }
+    
+    .grid div {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .pac-dot {
+        background-color: lightskyblue;
+        border: 5px solid  #e5f4fe;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .wall {
+        background-color: #b76e79;
+    }
+    
+    .power-pellet {
+        background-color: lightskyblue;
+        border-radius: 10px;
+    }
+    
+    .blinky {
+        background-color: red;
+        border: 0px;
+    }
+    
+    .pinky {
+        background-color: pink;
+        border: 0px;
+    }
+    
+    .inky {
+        background-color: cyan;
+        border: 0px;
+    }
+    
+    .clyde {
+        background-color: orange;
+        border: 0px;
+    }
+    
+    .scared-ghost {
+        background-color: #8B008B;
+        border: 0px;
+    }
+    
+    .pac-man {
+        background-color: yellow;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .scorehead {
+        color: #B03060;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-.pinky {
-  background-color: pink;
-  border: 0px;
-}
+    .gamebuttons {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-.inky{
-  background-color: cyan;
-  border: 0px;
-}
+#gamebutton {
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    background-color: #b76e79;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+   
 
-.clyde{
-  background-color: orange;
-  border: 0px;
-}
-
-.scared-ghost {
-  background-color: #8B008B;
-  border: 0px;
-}
-
-.pac-man {
-  background-color: yellow;
-  border-radius: 10px;
 
 }
 
-.scorehead {
-  color: #B03060;
-  margin-left: 630px;
-}
+
